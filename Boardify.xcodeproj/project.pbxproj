@@ -11,6 +11,7 @@
 		B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */; };
 		B51D51F02CB3FC3100C87F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */; };
 		B51D51F32CB3FC3100C87F9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */; };
+		B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51FA2CB4071D00C87F9C /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B51D51FA2CB4071D00C87F9C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		B51D51F92CB4064900C87F9C /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
+				B51D51FA2CB4071D00C87F9C /* SignUp.swift */,
 			);
 			path = AppMain;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */,
+				B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */,
 				B51D51EC2CB3FC2E00C87F9C /* BoardifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
