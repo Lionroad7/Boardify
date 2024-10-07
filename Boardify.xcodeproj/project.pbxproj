@@ -53,6 +53,7 @@
 			children = (
 				B51D51EB2CB3FC2E00C87F9C /* BoardifyApp.swift */,
 				B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */,
+				B51D51F92CB4064900C87F9C /* AppMain */,
 				B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */,
 				B51D51F12CB3FC3100C87F9C /* Preview Content */,
 			);
@@ -65,6 +66,13 @@
 				B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B51D51F92CB4064900C87F9C /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
