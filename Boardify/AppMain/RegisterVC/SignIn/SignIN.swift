@@ -1,10 +1,8 @@
 //
-//  File.swift
+//  SignIN.swift
 //  Boardify
 //
 //  Created by islombek on 07/10/24.
 //
 
-import SwiftUI
-
-
+import Foundation

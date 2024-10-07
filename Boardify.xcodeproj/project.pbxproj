@@ -12,6 +12,8 @@
 		B51D51F02CB3FC3100C87F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */; };
 		B51D51F32CB3FC3100C87F9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */; };
 		B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51FA2CB4071D00C87F9C /* SignUp.swift */; };
+		B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52002CB41A1900C87F9C /* SignIN.swift */; };
+		B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52042CB41E2400C87F9C /* Launchscreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51D51FA2CB4071D00C87F9C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		B51D52002CB41A1900C87F9C /* SignIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIN.swift; sourceTree = "<group>"; };
+		B51D52022CB41DBC00C87F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B51D52042CB41E2400C87F9C /* Launchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchscreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		B51D51EA2CB3FC2E00C87F9C /* Boardify */ = {
 			isa = PBXGroup;
 			children = (
+				B51D52022CB41DBC00C87F9C /* Info.plist */,
 				B51D51EB2CB3FC2E00C87F9C /* BoardifyApp.swift */,
 				B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */,
 				B51D51F92CB4064900C87F9C /* AppMain */,
@@ -73,9 +79,43 @@
 		B51D51F92CB4064900C87F9C /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
-				B51D51FA2CB4071D00C87F9C /* SignUp.swift */,
+				B51D52032CB41E1000C87F9C /* Launchscreen */,
+				B51D51FC2CB40E3A00C87F9C /* RegisterVC */,
 			);
 			path = AppMain;
+			sourceTree = "<group>";
+		};
+		B51D51FC2CB40E3A00C87F9C /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				B51D51FF2CB40EE300C87F9C /* SignIn */,
+				B51D51FD2CB40E4700C87F9C /* SignUp */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		B51D51FD2CB40E4700C87F9C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B51D51FA2CB4071D00C87F9C /* SignUp.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B51D51FF2CB40EE300C87F9C /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B51D52002CB41A1900C87F9C /* SignIN.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		B51D52032CB41E1000C87F9C /* Launchscreen */ = {
+			isa = PBXGroup;
+			children = (
+				B51D52042CB41E2400C87F9C /* Launchscreen.swift */,
+			);
+			path = Launchscreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +191,8 @@
 				B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */,
 				B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */,
 				B51D51EC2CB3FC2E00C87F9C /* BoardifyApp.swift in Sources */,
+				B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */,
+				B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +329,13 @@
 				DEVELOPMENT_TEAM = T6X5LU6744;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boardify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,11 +360,13 @@
 				DEVELOPMENT_TEAM = T6X5LU6744;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boardify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
