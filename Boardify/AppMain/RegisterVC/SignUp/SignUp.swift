@@ -10,29 +10,32 @@ import SwiftUI
 struct BoardifySignUpView: View {
     @State private var isKeyboardVisible = false
     @State private var isSignUpMode = true
+    @State private var navigateToMainView = false // State to handle navigation
     
     var body: some View {
-        VStack {
+        NavigationView {
             VStack {
-                logoSection
-                if !isKeyboardVisible {
-                    illustrationSection
+                VStack {
+                    logoSection
+                    if !isKeyboardVisible {
+                        illustrationSection
+                    }
+                    existingAccountSection
+                    inputFieldsSection
+                    actionButton
+                    Spacer()
                 }
-                existingAccountSection
-                inputFieldsSection
-                actionButton
-                Spacer()
+                .padding(.horizontal, 25)
+                .edgesIgnoringSafeArea(.all)
+                .animation(.easeInOut, value: isKeyboardVisible)
             }
-            .padding(.horizontal, 25)
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.all)
-            .animation(.easeInOut, value: isKeyboardVisible)
-        }
-        .onAppear {
-            setupKeyboardObservers()
-        }
-        .onDisappear {
-            removeKeyboardObservers()
+            .onAppear {
+                setupKeyboardObservers()
+            }
+            .onDisappear {
+                removeKeyboardObservers()
+            }
+            .navigationBarHidden(true) // Hide the navigation bar
         }
     }
     
@@ -91,32 +94,38 @@ struct BoardifySignUpView: View {
             if isSignUpMode {
                 CustomTextField(placeholder: "Enter your name")
                     .transition(.move(edge: .leading).combined(with: .opacity))
+                    .foregroundColor(.black)
             }
             CustomTextField(placeholder: "Enter your email")
+                .foregroundColor(.black)
             CustomTextField(placeholder: "Password", isSecure: true)
+                .foregroundColor(.black)
         }
         .animation(.easeInOut, value: isSignUpMode)
     }
     
     private var actionButton: some View {
-        Button(action: {
-            // Sign up or Sign in action here
-        }) {
-            Text(isSignUpMode ? "Sign up" : "Sign in")
-                .fontWeight(.bold)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color(red: 154/255, green: 222/255, blue: 99/255))
-                .foregroundColor(.white)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color(red: 159/255, green: 200/255, blue: 96/255), lineWidth: 4)
-                )
-                .cornerRadius(20)
+        NavigationLink(destination: MainTabView(), isActive: $navigateToMainView) {
+            Button(action: {
+                // Trigger navigation to MainTabView
+                navigateToMainView = true
+            }) {
+                Text(isSignUpMode ? "Sign up" : "Sign in")
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color(red: 154/255, green: 222/255, blue: 99/255))
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color(red: 159/255, green: 200/255, blue: 96/255), lineWidth: 4)
+                    )
+                    .cornerRadius(20)
+            }
+            .padding(.horizontal, 45)
+            .padding(.top, 10)
+            .animation(.easeInOut, value: isSignUpMode)
         }
-        .padding(.horizontal, 45)
-        .padding(.top, 10)
-        .animation(.easeInOut, value: isSignUpMode)
     }
     
     private func setupKeyboardObservers() {
@@ -158,6 +167,8 @@ struct CustomTextField: View {
         .foregroundColor(.gray)
     }
 }
+
+
 
 struct BoardifySignUpView_Previews: PreviewProvider {
     static var previews: some View {

@@ -14,6 +14,9 @@
 		B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51FA2CB4071D00C87F9C /* SignUp.swift */; };
 		B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52002CB41A1900C87F9C /* SignIN.swift */; };
 		B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52042CB41E2400C87F9C /* Launchscreen.swift */; };
+		B59B5E5A2CB59E690060E4CD /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E592CB59E690060E4CD /* TabbarView.swift */; };
+		B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5C2CB59E820060E4CD /* ToDoView.swift */; };
+		B59B5E602CB5B9230060E4CD /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5F2CB5B9230060E4CD /* AddTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B51D52002CB41A1900C87F9C /* SignIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIN.swift; sourceTree = "<group>"; };
 		B51D52022CB41DBC00C87F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B51D52042CB41E2400C87F9C /* Launchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchscreen.swift; sourceTree = "<group>"; };
+		B59B5E592CB59E690060E4CD /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		B59B5E5C2CB59E820060E4CD /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		B59B5E5F2CB5B9230060E4CD /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		B51D51F92CB4064900C87F9C /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
+				B59B5E5B2CB59E720060E4CD /* ToDoVC */,
+				B59B5E582CB59E5B0060E4CD /* TabbarVc */,
 				B51D52032CB41E1000C87F9C /* Launchscreen */,
 				B51D51FC2CB40E3A00C87F9C /* RegisterVC */,
 			);
@@ -116,6 +124,31 @@
 				B51D52042CB41E2400C87F9C /* Launchscreen.swift */,
 			);
 			path = Launchscreen;
+			sourceTree = "<group>";
+		};
+		B59B5E582CB59E5B0060E4CD /* TabbarVc */ = {
+			isa = PBXGroup;
+			children = (
+				B59B5E592CB59E690060E4CD /* TabbarView.swift */,
+			);
+			path = TabbarVc;
+			sourceTree = "<group>";
+		};
+		B59B5E5B2CB59E720060E4CD /* ToDoVC */ = {
+			isa = PBXGroup;
+			children = (
+				B59B5E5E2CB5B8DC0060E4CD /* AddTask */,
+				B59B5E5C2CB59E820060E4CD /* ToDoView.swift */,
+			);
+			path = ToDoVC;
+			sourceTree = "<group>";
+		};
+		B59B5E5E2CB5B8DC0060E4CD /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				B59B5E5F2CB5B9230060E4CD /* AddTask.swift */,
+			);
+			path = AddTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59B5E5A2CB59E690060E4CD /* TabbarView.swift in Sources */,
 				B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */,
 				B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */,
 				B51D51EC2CB3FC2E00C87F9C /* BoardifyApp.swift in Sources */,
+				B59B5E602CB5B9230060E4CD /* AddTask.swift in Sources */,
+				B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */,
 				B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */,
 				B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */,
 			);

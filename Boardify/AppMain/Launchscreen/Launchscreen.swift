@@ -19,7 +19,7 @@ struct LaunchScreenView: View {
             BoardifySignUpView()
         } else {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.white,  Color.white, Color.white, Color(red: 154/255, green: 222/255, blue: 99/255)]),
+                LinearGradient(gradient: Gradient(colors: [Color.clear,  Color.clear, Color.clear, Color(red: 154/255, green: 222/255, blue: 99/255)]),
                                startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 
