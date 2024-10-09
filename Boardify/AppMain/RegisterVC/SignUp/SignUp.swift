@@ -39,6 +39,7 @@ struct BoardifySignUpView: View {
         }
     }
     
+    
     private var logoSection: some View {
         HStack {
             Spacer()
@@ -54,6 +55,7 @@ struct BoardifySignUpView: View {
         .padding(.top, 66)
     }
     
+    
     private var illustrationSection: some View {
         HStack {
             Spacer()
@@ -65,6 +67,7 @@ struct BoardifySignUpView: View {
             Spacer()
         }
     }
+    
     
     private var existingAccountSection: some View {
         HStack {
@@ -89,6 +92,7 @@ struct BoardifySignUpView: View {
         .padding(.top, 20)
     }
     
+    
     private var inputFieldsSection: some View {
         VStack(spacing: 10) {
             if isSignUpMode {
@@ -103,6 +107,7 @@ struct BoardifySignUpView: View {
         }
         .animation(.easeInOut, value: isSignUpMode)
     }
+    
     
     private var actionButton: some View {
         NavigationLink(destination: MainTabView(), isActive: $navigateToMainView) {
@@ -128,6 +133,7 @@ struct BoardifySignUpView: View {
         }
     }
     
+    
     private func setupKeyboardObservers() {
         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { _ in
             isKeyboardVisible = true
@@ -143,6 +149,9 @@ struct BoardifySignUpView: View {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 }
+
+
+
 
 struct CustomTextField: View {
     var placeholder: String

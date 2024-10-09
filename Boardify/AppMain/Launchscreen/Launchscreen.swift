@@ -19,16 +19,16 @@ struct LaunchScreenView: View {
             BoardifySignUpView()
         } else {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.clear,  Color.clear, Color.clear, Color(red: 154/255, green: 222/255, blue: 99/255)]),
+                LinearGradient(gradient: Gradient(colors: [Color.clear, Color.clear, Color(red: 154/255, green: 222/255, blue: 99/255)]),
                                startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 
                 HStack {
                     Image("LogoIcon")
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 55, height: 55)
                     Text("BOARDIFY")
-                        .font(.system(size: 29))
+                        .font(.system(size: 35))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 154/255, green: 222/255, blue: 99/255))
                 }
@@ -59,7 +59,7 @@ struct LaunchScreenView: View {
                 
                 // Sunshine Effect
                 RadialGradient(
-                    gradient: Gradient(colors: [Color.white.opacity(0.6), Color.clear]),
+                    gradient: Gradient(colors: [Color.clear, ]),
                     center: .center,
                     startRadius: 0,
                     endRadius: 300

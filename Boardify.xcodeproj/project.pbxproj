@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B51D51EC2CB3FC2E00C87F9C /* BoardifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51EB2CB3FC2E00C87F9C /* BoardifyApp.swift */; };
-		B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */; };
 		B51D51F02CB3FC3100C87F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */; };
 		B51D51F32CB3FC3100C87F9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */; };
 		B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51FA2CB4071D00C87F9C /* SignUp.swift */; };
@@ -17,12 +16,17 @@
 		B59B5E5A2CB59E690060E4CD /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E592CB59E690060E4CD /* TabbarView.swift */; };
 		B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5C2CB59E820060E4CD /* ToDoView.swift */; };
 		B59B5E602CB5B9230060E4CD /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5F2CB5B9230060E4CD /* AddTask.swift */; };
+		B5AEF07D2CB6FFEE00D06BA1 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEF07C2CB6FFEE00D06BA1 /* TaskCardView.swift */; };
+		B5AEF07F2CB7000B00D06BA1 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEF07E2CB7000B00D06BA1 /* FilterButton.swift */; };
+		B5AEF0812CB7001300D06BA1 /* SortButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEF0802CB7001300D06BA1 /* SortButton.swift */; };
+		B5AEF0832CB7004300D06BA1 /* AddNewTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEF0822CB7004300D06BA1 /* AddNewTaskButton.swift */; };
+		B5AEF0852CB7005C00D06BA1 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEF0842CB7005C00D06BA1 /* TaskModel.swift */; };
+		B5BB0A7A2CB62CE0003941BE /* TodoComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0A792CB62CE0003941BE /* TodoComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B51D51E82CB3FC2E00C87F9C /* Boardify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51D51EB2CB3FC2E00C87F9C /* BoardifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardifyApp.swift; sourceTree = "<group>"; };
-		B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51D51F22CB3FC3100C87F9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51D51FA2CB4071D00C87F9C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -32,6 +36,12 @@
 		B59B5E592CB59E690060E4CD /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		B59B5E5C2CB59E820060E4CD /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		B59B5E5F2CB5B9230060E4CD /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		B5AEF07C2CB6FFEE00D06BA1 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		B5AEF07E2CB7000B00D06BA1 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		B5AEF0802CB7001300D06BA1 /* SortButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortButton.swift; sourceTree = "<group>"; };
+		B5AEF0822CB7004300D06BA1 /* AddNewTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskButton.swift; sourceTree = "<group>"; };
+		B5AEF0842CB7005C00D06BA1 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		B5BB0A792CB62CE0003941BE /* TodoComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,6 @@
 			children = (
 				B51D52022CB41DBC00C87F9C /* Info.plist */,
 				B51D51EB2CB3FC2E00C87F9C /* BoardifyApp.swift */,
-				B51D51ED2CB3FC2E00C87F9C /* ContentView.swift */,
 				B51D51F92CB4064900C87F9C /* AppMain */,
 				B51D51EF2CB3FC3100C87F9C /* Assets.xcassets */,
 				B51D51F12CB3FC3100C87F9C /* Preview Content */,
@@ -139,6 +148,12 @@
 			children = (
 				B59B5E5E2CB5B8DC0060E4CD /* AddTask */,
 				B59B5E5C2CB59E820060E4CD /* ToDoView.swift */,
+				B5AEF0842CB7005C00D06BA1 /* TaskModel.swift */,
+				B5AEF0822CB7004300D06BA1 /* AddNewTaskButton.swift */,
+				B5AEF07C2CB6FFEE00D06BA1 /* TaskCardView.swift */,
+				B5AEF07E2CB7000B00D06BA1 /* FilterButton.swift */,
+				B5AEF0802CB7001300D06BA1 /* SortButton.swift */,
+				B5BB0A792CB62CE0003941BE /* TodoComponents.swift */,
 			);
 			path = ToDoVC;
 			sourceTree = "<group>";
@@ -222,11 +237,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59B5E5A2CB59E690060E4CD /* TabbarView.swift in Sources */,
-				B51D51EE2CB3FC2E00C87F9C /* ContentView.swift in Sources */,
 				B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */,
 				B51D51EC2CB3FC2E00C87F9C /* BoardifyApp.swift in Sources */,
 				B59B5E602CB5B9230060E4CD /* AddTask.swift in Sources */,
+				B5AEF07D2CB6FFEE00D06BA1 /* TaskCardView.swift in Sources */,
+				B5AEF0852CB7005C00D06BA1 /* TaskModel.swift in Sources */,
+				B5BB0A7A2CB62CE0003941BE /* TodoComponents.swift in Sources */,
+				B5AEF0812CB7001300D06BA1 /* SortButton.swift in Sources */,
 				B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */,
+				B5AEF0832CB7004300D06BA1 /* AddNewTaskButton.swift in Sources */,
+				B5AEF07F2CB7000B00D06BA1 /* FilterButton.swift in Sources */,
 				B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */,
 				B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */,
 			);
