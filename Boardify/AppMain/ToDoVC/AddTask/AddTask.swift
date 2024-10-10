@@ -14,7 +14,7 @@ struct AddANewTaskView: View {
     @State private var taskDueDate: Date = Date()
     @State private var taskPriority: String = "Low"
     
-    @Environment(\.presentationMode) var presentationMode // Add this to dismiss the sheet
+    @Environment(\.presentationMode) var presentationMode
     
     let priorities = ["Low", "Medium", "High"]
     
@@ -35,12 +35,12 @@ struct AddANewTaskView: View {
                         .cornerRadius(12)
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 3)
                         .padding(.horizontal)
-                        .frame(maxHeight: taskTitle.isEmpty ? 50 : .infinity) // Dynamic height adjustment
+                        .frame(maxHeight: taskTitle.isEmpty ? 50 : .infinity)
                     
                     TextEditor(text: $taskDescription)
                         .font(.body)
                         .padding()
-                        .frame(height: 120) // Fixed height for description
+                        .frame(height: 120)
                         .background(Color(.systemGray6))
                         .cornerRadius(12)
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 3)
@@ -97,7 +97,7 @@ struct AddANewTaskView: View {
                            priority: taskPriority,
                            commentsCount: 0,
                            progress: 0.12)
-        tasks.append(newTask) // Add the new task to the tasks array
+        tasks.append(newTask) 
         
 
         presentationMode.wrappedValue.dismiss()

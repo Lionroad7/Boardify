@@ -35,7 +35,7 @@ struct BoardifySignUpView: View {
             .onDisappear {
                 removeKeyboardObservers()
             }
-            .navigationBarHidden(true) // Hide the navigation bar
+            .navigationBarHidden(true)
         }
     }
     
@@ -111,8 +111,8 @@ struct BoardifySignUpView: View {
     
     private var actionButton: some View {
         NavigationLink(destination: MainTabView(), isActive: $navigateToMainView) {
+          
             Button(action: {
-                // Trigger navigation to MainTabView
                 navigateToMainView = true
             }) {
                 Text(isSignUpMode ? "Sign up" : "Sign in")

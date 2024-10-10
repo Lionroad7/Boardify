@@ -10,7 +10,7 @@ import SwiftUI
 struct SortButton: View {
     var body: some View {
         Button(action: {
-            // Add sorting functionality
+        
         }) {
             Label("Sort by", systemImage: "arrow.up.arrow.down.circle")
                 .font(.system(size: 17))

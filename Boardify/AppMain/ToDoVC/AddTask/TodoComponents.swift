@@ -13,12 +13,11 @@ struct SearchBar: View {
     
     var body: some View {
         HStack {
-            // Search Icon
+           
             Image(systemName: "magnifyingglass")
                 .foregroundColor(.gray)
                 .padding(.leading, 8)
             
-            // Search TextField
             TextField("Search...", text: $searchText, onEditingChanged: { isEditing in
                 self.isEditing = isEditing
             })
@@ -30,7 +29,7 @@ struct SearchBar: View {
                 self.isEditing = true
             }
             
-            // Clear Button when editing
+
             if isEditing {
                 Button(action: {
                     self.searchText = ""
@@ -44,12 +43,12 @@ struct SearchBar: View {
         }
         .padding(.horizontal, 1)
         .padding(.vertical, 1)
-        .background(Color(red: 223/255, green: 245/255, blue: 213/255)) // Slight background for the search bar area
+        .background(Color(red: 223/255, green: 245/255, blue: 213/255))
         .cornerRadius(20)
         .onTapGesture {
             self.isEditing = true
         }
-        .animation(.easeInOut(duration: 0.2), value: isEditing) // Smooth transition for clear button
+        .animation(.easeInOut(duration: 0.2), value: isEditing) 
     }
 }
 

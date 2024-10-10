@@ -37,14 +37,13 @@ struct LaunchScreenView: View {
                 .opacity(opacity)
                 .animation(.easeInOut(duration: 1.5).repeatCount(1))
                 .onAppear {
-                    // Initial animation settings
+            
                     withAnimation(.linear(duration: 1.2)) {
                         self.scaleEffect = 9.0
                         self.opacity = 1.0
                         self.offset = -UIScreen.main.bounds.height / 2 + 80
                     }
                     
-                    // Transition to ContentView after animation
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                         withAnimation(.easeInOut(duration: 0.2)) {
                             self.transition = true
@@ -69,7 +68,7 @@ struct LaunchScreenView: View {
                 .scaleEffect(1.5)
                 .animation(.easeInOut(duration: 2).repeatForever(autoreverses: true))
             }
-            .opacity(transition ? 5 : 1) // Fade out effect
+            .opacity(transition ? 5 : 1) 
         }
     }
 }

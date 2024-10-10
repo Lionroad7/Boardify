@@ -29,21 +29,19 @@ struct FilterButton: View {
         .cornerRadius(20)
     }
 
-    // Function to toggle through priorities
     func toggleFilter() {
 
         if let currentFilter = filterPriority {
-            // Find the index of the current filter
+            
             if let currentIndex = priorities.firstIndex(of: currentFilter) {
-                // Check if we can move to the next priority in the list
+
                 if currentIndex < priorities.count - 1 {
-                    filterPriority = priorities[currentIndex + 1] // Move to next priority
+                    filterPriority = priorities[currentIndex + 1]
                 } else {
                     filterPriority = nil
                 }
             }
         } else {
-            // If no filter is set, start with the first priority
             filterPriority = priorities.first
         }
     }

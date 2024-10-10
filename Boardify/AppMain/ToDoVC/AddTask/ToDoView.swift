@@ -27,13 +27,14 @@ struct ToDoView: View {
              progress: 0.70),
         
         Task(title: "Design High-Fidelity Mockups",
-             description: "Create detailed mockups that represent the final design of the website.",
+             description: "Necessary CMS and development tools\nSet up version control systemCreate detailed mockups that represent the final design of the website.",
              dueDate: "Nov 2nd, 2024",
              priority: "Easy",
              commentsCount: 3,
              progress: 0.44)
     ]
     
+
     var body: some View {
         NavigationView {
             VStack {
@@ -58,7 +59,7 @@ struct ToDoView: View {
                         showAddTaskView = true
                     })
                     .sheet(isPresented: $showAddTaskView) {
-                        AddANewTaskView(tasks: $tasks) // Pass the actual tasks array
+                        AddANewTaskView(tasks: $tasks) 
                     }
                 }
                 .padding(.horizontal)

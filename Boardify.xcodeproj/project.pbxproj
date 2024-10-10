@@ -13,6 +13,7 @@
 		B51D51FB2CB4071D00C87F9C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D51FA2CB4071D00C87F9C /* SignUp.swift */; };
 		B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52002CB41A1900C87F9C /* SignIN.swift */; };
 		B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D52042CB41E2400C87F9C /* Launchscreen.swift */; };
+		B54F6EC52CB78DA50010FF0A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F6EC42CB78DA50010FF0A /* NetworkManager.swift */; };
 		B59B5E5A2CB59E690060E4CD /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E592CB59E690060E4CD /* TabbarView.swift */; };
 		B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5C2CB59E820060E4CD /* ToDoView.swift */; };
 		B59B5E602CB5B9230060E4CD /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B5E5F2CB5B9230060E4CD /* AddTask.swift */; };
@@ -33,6 +34,7 @@
 		B51D52002CB41A1900C87F9C /* SignIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIN.swift; sourceTree = "<group>"; };
 		B51D52022CB41DBC00C87F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B51D52042CB41E2400C87F9C /* Launchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchscreen.swift; sourceTree = "<group>"; };
+		B54F6EC42CB78DA50010FF0A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B59B5E592CB59E690060E4CD /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		B59B5E5C2CB59E820060E4CD /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		B59B5E5F2CB5B9230060E4CD /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		B51D51F92CB4064900C87F9C /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
+				B54F6EC32CB78D910010FF0A /* NetworkManager */,
 				B59B5E5B2CB59E720060E4CD /* ToDoVC */,
 				B59B5E582CB59E5B0060E4CD /* TabbarVc */,
 				B51D52032CB41E1000C87F9C /* Launchscreen */,
@@ -135,6 +138,14 @@
 			path = Launchscreen;
 			sourceTree = "<group>";
 		};
+		B54F6EC32CB78D910010FF0A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B54F6EC42CB78DA50010FF0A /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		B59B5E582CB59E5B0060E4CD /* TabbarVc */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,13 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				B59B5E5E2CB5B8DC0060E4CD /* AddTask */,
-				B59B5E5C2CB59E820060E4CD /* ToDoView.swift */,
-				B5AEF0842CB7005C00D06BA1 /* TaskModel.swift */,
-				B5AEF0822CB7004300D06BA1 /* AddNewTaskButton.swift */,
-				B5AEF07C2CB6FFEE00D06BA1 /* TaskCardView.swift */,
-				B5AEF07E2CB7000B00D06BA1 /* FilterButton.swift */,
-				B5AEF0802CB7001300D06BA1 /* SortButton.swift */,
-				B5BB0A792CB62CE0003941BE /* TodoComponents.swift */,
 			);
 			path = ToDoVC;
 			sourceTree = "<group>";
@@ -161,7 +165,14 @@
 		B59B5E5E2CB5B8DC0060E4CD /* AddTask */ = {
 			isa = PBXGroup;
 			children = (
+				B59B5E5C2CB59E820060E4CD /* ToDoView.swift */,
 				B59B5E5F2CB5B9230060E4CD /* AddTask.swift */,
+				B5AEF0822CB7004300D06BA1 /* AddNewTaskButton.swift */,
+				B5AEF07C2CB6FFEE00D06BA1 /* TaskCardView.swift */,
+				B5AEF07E2CB7000B00D06BA1 /* FilterButton.swift */,
+				B5AEF0842CB7005C00D06BA1 /* TaskModel.swift */,
+				B5BB0A792CB62CE0003941BE /* TodoComponents.swift */,
+				B5AEF0802CB7001300D06BA1 /* SortButton.swift */,
 			);
 			path = AddTask;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 				B5AEF0812CB7001300D06BA1 /* SortButton.swift in Sources */,
 				B59B5E5D2CB59E820060E4CD /* ToDoView.swift in Sources */,
 				B5AEF0832CB7004300D06BA1 /* AddNewTaskButton.swift in Sources */,
+				B54F6EC52CB78DA50010FF0A /* NetworkManager.swift in Sources */,
 				B5AEF07F2CB7000B00D06BA1 /* FilterButton.swift in Sources */,
 				B51D52012CB41A1900C87F9C /* SignIN.swift in Sources */,
 				B51D52052CB41E2400C87F9C /* Launchscreen.swift in Sources */,
@@ -307,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -364,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -391,7 +403,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +434,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
